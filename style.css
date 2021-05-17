@@ -1,0 +1,391 @@
+*{
+    margin: 0;
+    padding: 0 ;
+    box-sizing: border-box !important;
+    font-family: 'Epilogue', sans-serif;
+    transition: ease ;
+}
+
+/* Universal Variables.*/
+
+:root{
+    --gradient:linear-gradient(260deg, #0A6DC1 0%,#0864B1 100%); 
+    --heading:4em;
+    --heading-weight:600;
+    --paragraph: 1em;
+    --paragraph-color:gray;
+    --link-text-color:rgb(229, 228, 255);
+    --primaryblue:#0A6DC1;
+    --background-gray:#F5F5F5;
+}
+
+/* Universal classes.*/
+
+.wrapper{
+    height: 100vh;
+    padding-top: .7em;
+}
+
+/*gradient-animation*/
+
+.wrapper {
+    background: linear-gradient(144deg, #1a53c8, #41b2f2, #b516ff);
+    background-size: 600% 600%;
+
+    -webkit-animation: AnimationName 29s ease infinite;
+    -moz-animation: AnimationName 29s ease infinite;
+    animation: AnimationName 29s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:22% 0%}
+    50%{background-position:79% 100%}
+    100%{background-position:22% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:22% 0%}
+    50%{background-position:79% 100%}
+    100%{background-position:22% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:22% 0%}
+    50%{background-position:79% 100%}
+    100%{background-position:22% 0%}
+}
+
+
+/*animationends*/
+
+
+
+nav .logo{
+    font-weight: 700;
+    font-size: 2em;
+    letter-spacing: .1em;
+    color: white !important;
+}
+
+nav .navbar-nav .nav-item .nav-link{
+    color:var(--link-text-color);
+    
+}
+
+nav .navbar-nav .nav-item .nav-link:hover{
+    color:white;
+}
+
+/* this will remove the border and shadow around menu icon */
+
+.navbar-toggler, .navbar-toggler:focus, .navbar-toggler:active {
+    outline: none ;
+    box-shadow: none;
+    border: none;
+}
+
+/* x this will remove the border and shadow around menu icon x */
+
+/*header-cover-column-left*/
+.container-fluid .row .heading h1{
+    margin-top: 8rem;
+    padding-left: 2rem;
+    font-size: 3.5em;
+}
+.container-fluid .row .heading p{
+    margin-top: 1em;
+    font-size: .9em;
+    padding-left: 2rem;
+    color:var(--paragraph);
+}
+
+.container-fluid .row .heading button {
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius:3.5em;
+    padding: 1em 3em;
+    font-weight: 600;
+    text-align: center;
+    font-size: .8em;
+    color: white;
+    margin-left: 2em;
+    margin-top: 3em;
+}
+
+.container-fluid .row .heading button:hover {
+    background-color: white;
+    color:var(--primaryblue);
+    
+  
+}
+
+/*header-cover-column-left*/
+
+/*header-cover-column-right*/
+
+.container-fluid .row .img-illustration img{
+    width:34rem;
+    height:34rem;
+    padding:2rem;
+    margin-left:5rem;
+    margin-top:2.5rem;
+}
+
+/*header-cover-column-right*/
+
+
+
+/*main section starts*/
+
+/*AboutUs*/
+
+main .container .main-header{
+    margin: 2em 0;
+}
+main .container .main-header h1{
+    font-size:2em;
+}
+
+main .container .main-header p{
+    color: var(--paragraph-color);
+}
+
+main .container .flex-row {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 3em 0 1em 0;
+}
+
+main .container .main-header .flex-row h1 {
+    font-size: 2.5em;
+    color:var(--primaryblue) ;
+    font-weight: bolder;
+}
+
+main  .main-header .flex-row .c1{
+    text-align: left;
+}
+
+main .main-header-2 {
+    background-color: var(--background-gray);
+}
+
+main .main-header-2 h1{
+   font-size: 2em;
+   color: var(--primaryblue);
+}
+
+main .container-fluid .flex-row {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    padding: 3em 0 1em 0;
+}
+
+main .container-fluid .flex-row .card .icon{
+    font-size: 4em;
+    padding: .4em 0;
+    color:var(--primaryblue);
+}
+
+main .main-header-3 h1{
+    font-size: 2em;
+ }
+
+main .main-header-3 .card-prop:hover{
+    box-shadow: 0px 10px 30px rgba(53, 53, 53, 0.2);
+}
+
+main .main-header-4 {
+    background-color: var(--background-gray);
+}
+
+
+/*Testimonials with Slider*/
+
+main .main-header-4 .test-slide {
+    padding-bottom: 2em;
+}
+
+main .main-header-4  h1{
+   font-size: 2em;
+   color: var(--primaryblue);
+}
+
+main .main-header-4 .test-slide p {
+    padding: 0 1em;
+    color:var(--paragraph-color);
+}
+
+main .main-header-4 .test-slide h1{
+    font-size: 1.6em;
+    color: var(--primaryblue);  
+}
+
+/*newsletter*/
+
+main .main-header-5{
+    background-color: var(--primaryblue);
+    padding: 4em 2em;
+}
+
+
+/*Contactus*/
+
+main .main-header-6{
+    padding: 4em 2em;
+    background-color: var(--background-gray);
+}
+
+
+
+
+
+/*----------------MediaQueries------------------*/
+
+@media Screen and (max-width:578px){
+ 
+    /*----Header styling---------*/
+
+    nav .logo{
+        font-weight: 700;
+        font-size: 1.4em;
+        letter-spacing: .1em;
+        color: white !important;
+    }
+
+    /*image*/
+
+    .container-fluid .row .img-illustration img{
+        display: none;
+    }    
+
+    /*left column*/
+
+    .container-fluid .row .heading h1{
+        margin-top: 4rem;
+        font-size: 3em;
+        padding-left:0;
+        text-align: center;
+    }
+    .container-fluid .row .heading p{
+        padding:0 1.2em;
+        text-align: center;
+        font-size: .9em;
+        margin: 1.3em auto
+        1em auto;
+        color:var(--paragraph);
+    }
+    
+    .container-fluid .row .heading button {
+        display: flex;
+        justify-content: center !important;
+        text-align: center;
+        font-size: .8em;
+        color: white;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 3em;
+        padding: 1.2em 3.5em;
+    }
+
+
+    /*------about--------*/
+
+    main .container .main-header{
+        margin: 2em 0;
+    }
+    main .container .main-header h1{
+        font-size:2em;
+    }
+    
+    main .container .main-header p{
+        color: var(--paragraph-color);
+        padding: 0 1.5em;
+        text-align:justify
+    }
+    
+    main .container .flex-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap:1.4em;
+       
+    }
+    
+    main .container .main-header .flex-row h1 {
+        font-size: 2.5em;
+        color:var(--primaryblue) ;
+        font-weight: bolder;
+    }
+    
+    main  .main-header .flex-row .c1{
+        text-align: center;
+    }
+
+    main  .main-header .flex-row .c1 p{
+        text-align: center;
+    }
+    
+/*-----Features--------*/
+
+main .container-fluid .flex-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 3em 0 1em 0;
+}
+
+main .container-fluid .flex-row .card{
+margin-bottom: 1.2em;
+}
+
+main .container-fluid .flex-row .card .icon{
+    font-size: 4em;
+    padding: .4em 0;
+    color:var(--primaryblue);
+}
+
+main .main-header-3 h1{
+    font-size: 2em;
+ }
+
+
+ main .main-header-4 .carousal-item .carousal-data{
+     padding:.5em;
+ }
+
+ main .main-header-4 .test-slide p {
+    padding: 0 1.2em; 
+    color:var(--paragraph-color);
+    font-size: .8em;
+}
+
+main .main-header-4 .test-slide blockquote {
+    margin-bottom: .3em;
+    font-size: .8em;
+}
+
+
+main .main-header-4 .test-slide h1{
+    font-size: 1em;
+    padding: .5em;
+    color: var(--primaryblue);  
+}
+ 
+ }
+main .main-header-5 h1{
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom:1em;
+}
+main .main-header-5 form,input{
+    text-align: center;
+}
+
+
+}
+
